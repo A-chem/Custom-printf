@@ -1,9 +1,7 @@
+![dreamina-2025-08-04-4343-''ft_printf_ design informatique](https://github.com/user-attachments/assets/cf7c5ad5-d093-4f97-9f2a-185e32a4ac70)
 # custom-printf
 custom-printf is a custom implementation of the C standard library function printf, developed as part of the 42 School curriculum. It replicates the behavior of the original printf function, handling formatted 
 output conversion and variable arguments without using the standard version.
-
-![dreamina-2025-08-04-4343-''ft_printf_ design informatique](https://github.com/user-attachments/assets/cf7c5ad5-d093-4f97-9f2a-185e32a4ac70)
-
 
 # 🖨️ ft_printf – Recreating printf in C
 
