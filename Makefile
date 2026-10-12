@@ -16,9 +16,9 @@ CC= cc
 
 CFLAGS= -Wall -Wextra -Werror
 
-SRC = ft_putchar.c ft_putstr.c ft_putnbr.c ft_unsigned_putnbr.c ft_puthex.c ft_putadr.c ft_printf.c
+SRC = src/ft_putchar.c src/ft_putstr.c src/ft_putnbr.c src/ft_unsigned_putnbr.c src/ft_puthex.c src/ft_putadr.c src/ft_printf.c
 
-OBJ = $(SRC:.c=.o);
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
@@ -26,7 +26,7 @@ $(NAME): $(OBJ)
 	@ar rcs $(NAME) $(OBJ)
 	@echo "Library $(NAME) created."
 
-%.o: %.c ft_printf.h
+src/%.o: src/%.c src/ft_printf.h
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@echo "Compiled $<"
 
@@ -39,3 +39,4 @@ fclean: clean
 
 re : fclean all
 
+.PHONY: all clean fclean re
